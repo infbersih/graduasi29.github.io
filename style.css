@@ -1,0 +1,58 @@
+body {
+    background-color: #f8f9fa;
+}
+
+#invitation-container {
+    text-align: center;
+}
+
+#invitation-card {
+    position: relative;
+    width: 250px; /* Ukuran undangan */
+    height: 450px;
+    margin: auto;
+}
+
+.invitation-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#qrcode-container {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0 0.5cm; /* Beri padding kiri-kanan agar teks tidak menempel */
+}
+
+#qrcode {
+    padding: 5px;
+}
+
+#qr-text {
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.2;
+    max-width: calc(100% - 1cm); /* Hindari teks keluar dari batas */
+    margin: 0 auto;
+}
+
+#qr-text div.kelas {
+    font-size: 1.2rem; /* Kelas lebih besar */
+    font-weight: bold;
+}
+
+#qr-text div.nama {
+    font-size: 1rem; /* Nama tetap responsif */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal; /* Izinkan teks pindah ke baris baru */
+}
